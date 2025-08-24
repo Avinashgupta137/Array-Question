@@ -200,7 +200,7 @@ func rotateArr(arr: [Int], rotat: Int) {
     print(rotated)
 }
 rotateArr(arr :[1,2,3,4,22,5,1] , rotat : 4)
-
+//bf,f
 //Hello my testing Avinash
 //Hello my testing Avinash
 //Hello my testing Avinash
