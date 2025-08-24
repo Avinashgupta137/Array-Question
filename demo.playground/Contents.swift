@@ -208,3 +208,4 @@ rotateArr(arr :[1,2,3,4,22,5,1] , rotat : 4)
 //vcjvvquvdvqvcvq
 //vvucq vcuqvcv
 //hnknkn
+//md.swcmszm
