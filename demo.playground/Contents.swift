@@ -1,3 +1,4 @@
+//MARK: Removeduplicat
 func removeduplicate(arr : [Int]) -> [Int] {
     var uniqueArr : [Int] = []
     
@@ -18,7 +19,7 @@ func removeduplicate(arr : [Int]) -> [Int] {
  
 print(removeduplicate(arr:[1,2,1,2,3,2,4,3,5,6]))
  
- 
+//MARK: Sec largest
 func secLargest(arr : inout [Int]) {
     var max = arr[0]
     var secMax = arr[0]
@@ -38,7 +39,7 @@ func secLargest(arr : inout [Int]) {
 var a = [1,2,3,2,53,3]
 secLargest(arr : &a)
  
- 
+//MARK: Swap Number
 func swapArr(arr : inout [Int]){
     let n = arr.count
     for i in 0..<n/2 {
@@ -51,7 +52,7 @@ func swapArr(arr : inout [Int]){
 var numbers = [1, 2, 32, 1, 3, 2, 3]
 swapArr(arr: &numbers)
  
-//sortArray
+//MARK: SortArray
  
 func sortArray(arr : inout [Int]) {
     for i in 0..<arr.count {
@@ -67,7 +68,7 @@ func sortArray(arr : inout [Int]) {
 }
 var num = [1, 2, 32, 1, 3, 2, 3]
 sortArray(arr : &num)
-//palindrome
+//MARK:  palindrome
  func isPalindrome(arr : String) -> Bool {
      let char = Array(arr.lowercased())
      
@@ -85,40 +86,8 @@ sortArray(arr : &num)
  }
  print(isPalindrome(arr : "lowqewol"))
 
-func palindrome(str : String) -> Bool {
-    let char = Array(str.lowercased())
-    
-    var start = 0
-    var end = char.count - 1
-    
-    while start < end {
-        if char[start] != char[end] {
-            return false
-        }
-        start += 1
-        end -= 1
-    }
-    return true
-}
-print(palindrome(str : "lolr"))
+//MARK: favnonicSr Number
 
-
-func sortArray(arr : inout [Int]) {
-    for i in 0..<arr.count {
-        for j in 0..<arr.count - i - 1{
-            if arr[j] > arr[j + 1] {
-                let temp = arr[j]
-                arr[j] = arr[j + 1]
-                arr[j + 1] = temp
-            }
-        }
-    }
-    print(arr)
-}
-var a = [2,3,1,4,2,4,2,1,323,1,23,4]
-sortArray(arr : &a)
-
-//favnonicSr
 func fevNoS(num : Int) -> [Int] {
     
     guard num > 0 else {return [] }
@@ -134,6 +103,7 @@ func fevNoS(num : Int) -> [Int] {
     return series
 }
 print(fevNoS(num: 12))
+//MARK: check Prime Number
 
 func isPrime(_ number: Int) -> Bool {
     if number <= 1 { return false }
@@ -144,7 +114,7 @@ func isPrime(_ number: Int) -> Bool {
     }
     return true
 }
-
+//MARK: Get Prime Number
 func getPrime(num : Int) -> [Int] {
     var numbPrime : [Int] = []
     for i in 1...num {
@@ -158,6 +128,7 @@ func getPrime(num : Int) -> [Int] {
 print(getPrime(num : 100))
 print(isPrime(10))
 
+//MARK: Reverse String
 var str = "hello Word"
 var storeStr = ""
 for i in str {
@@ -169,12 +140,13 @@ var arr = [1,3,2,4,9,24,4,2]
 var test = arr.filter{ $0 % 2 == 0 }
 print(test)
 
-// Merge two sorted arrays
+//MARK: Merge two sorted arrays
 
-var arr =  [1,3,2,4,9,24,4,2]
-var test = [3,235,45,657,6,54,1]
-var test2 = arr + test
-print(test2.sorted())
+var arr2 =  [1,3,2,4,9,24,4,2]
+var test2 = [3,235,45,657,6,54,1]
+var test3 = arr2 + test2
+print(test3.sorted())
+//MARK: Move Zero
 
 func moveZero(arr : [Int]) -> [Int] {
     var nonZero : [Int] = []
@@ -191,7 +163,7 @@ func moveZero(arr : [Int]) -> [Int] {
     return nonZero
 }
 print(moveZero(arr: [1, 3, 2, 40, 0, 0, 4, 3]))
-
+//MARK: Rotare Array
 func rotateArr(arr: [Int], rotat: Int) {
     let n = arr.count
     let k = rotat % n
@@ -200,12 +172,12 @@ func rotateArr(arr: [Int], rotat: Int) {
     print(rotated)
 }
 rotateArr(arr :[1,2,3,4,22,5,1] , rotat : 4)
-//bf,f
-//Hello my testing Avinash
-//Hello my testing Avinash
-//Hello my testing Avinash
-//Hello my testing Avinash
-//vcjvvquvdvqvcvq
-//vvucq vcuqvcv
-//hnknkn
-//md.swcmszm
+
+//MARK: Kth longest number
+func kThLargest( arr : [Int], n : Int)-> Int {
+let num = arr.count
+let v = arr.sorted()
+return v[num - n]
+    
+}
+print(kThLargest(arr : [1,2,3,1,3,5,6,67,4] , n : 5))
